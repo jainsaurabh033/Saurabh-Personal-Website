@@ -1,5 +1,3 @@
-import React from "react";
-
 type SkillCategory = {
   name: string;
   skills: string[];

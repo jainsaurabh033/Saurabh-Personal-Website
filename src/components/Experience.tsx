@@ -1,5 +1,3 @@
-import React from "react";
-
 type ExperienceItem = {
   company: string;
   role: string;
