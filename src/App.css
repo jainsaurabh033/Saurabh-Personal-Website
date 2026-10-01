@@ -1,0 +1,317 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+nav div {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  padding: 60px 40px;
+}
+
+/* Hero section */
+.hero {
+  padding: 80px 40px;
+}
+
+.hero-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 56px;
+  margin: 10px 0;
+}
+
+.hero-text h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.hero-image {
+  flex: 0 0 300px;
+}
+
+.hero-image img {
+  width: 300px;
+  height: 300px;
+
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.section-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 40px;
+}
+
+.about {
+  background: #f7f7f7;
+}
+
+.section-label {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+
+.about p {
+  max-width: 800px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.about-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-details div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.about-details span {
+  font-size: 14px;
+  color: #666;
+}
+
+.about-details strong {
+  font-size: 17px;
+}
+
+.experience {
+  background: white;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.experience-card {
+  padding: 30px;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+}
+
+.experience-card > p:first-child {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.experience-card h3 {
+  font-size: 24px;
+  margin: 0 0 5px;
+}
+
+.experience-card h4 {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+
+.experience-card p:last-child {
+  line-height: 1.7;
+}
+
+.technolgy-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.technology-list span {
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: #f1f1f1;
+  font-size: 13px;
+}
+
+/* Project css */
+.projects {
+  background: #f7f7f7;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.project-card {
+  padding: 30px;
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+}
+
+.project-card h3 {
+  font-size: 24px;
+  margin: 0 0 15px;
+}
+
+.project-card p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 20px;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* skills section */
+.skills {
+  background: white;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.skill-category {
+  padding: 30px;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+}
+
+.skill-category h3 {
+  font-size: 20px;
+  margin: 0 0 20px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-list span {
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #f1f1f1;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .skill-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Acheivement and Education section */
+.education {
+  background: #f7f7f7;
+}
+
+.education-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.education-card {
+  padding: 30px;
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+}
+
+.education-card h3 {
+  font-size: 24px;
+  margin: 10px 0 5px;
+}
+
+.education-card h4 {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+
+.education-card p:last-child {
+  line-height: 1.7;
+}
+
+.achievements h3 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.achievements ul {
+  padding-left: 20px;
+}
+
+.achievements li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .education-content {
+    grid-template-columns: 1fr;
+  }
+}
