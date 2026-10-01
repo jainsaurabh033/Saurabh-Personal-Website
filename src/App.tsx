@@ -5,6 +5,8 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Skills from "./components/skills";
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
       <Projects />
       <Skills />
       <Education />
+      <Contact />
+      <Footer />
     </>
   );
 }
