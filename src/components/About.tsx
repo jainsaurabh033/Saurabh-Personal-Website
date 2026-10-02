@@ -1,6 +1,7 @@
 import { about, personalInfo } from "../data/portfolio";
 
 const About = () => {
+  console.log("Hello world");
   return (
     <section className="about" id="about">
       <div className="section-container">
