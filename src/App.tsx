@@ -7,8 +7,8 @@ import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import { useState } from "react";
 import Skills from "./components/Skills";
+import { useState } from "react";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
