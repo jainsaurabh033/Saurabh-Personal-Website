@@ -26,7 +26,8 @@ export const experiences: ExperienceItem[] = [
       "OOPS",
       "Design Patterns",
       "AWS Services",
-      "Intellij Writing",
+      "Intellij",
+      "Writing",
     ],
   },
   {

@@ -1,9 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
-/* Theme */
-
 .app {
   --background: #ffffff;
   --surface: #f7f7f7;
@@ -11,6 +5,15 @@ html {
   --muted-text: #666666;
   --border: #e5e5e5;
   --tag-background: #f1f1f1;
+
+  --font-body: 16px;
+  --font-small: 14px;
+  --font-label: 13px;
+
+  --font-h1: 56px;
+  --font-h2: 36px;
+  --font-h3: 24px;
+  --font-h4: 17px;
 
   min-height: 100vh;
   background: var(--background);
@@ -99,16 +102,27 @@ main {
 .hero-text h1 {
   font-size: 56px;
   margin: 10px 0;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
 }
 
 .hero-text h2 {
+  margin: 0 0 20px;
   font-size: 28px;
   font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.4;
+  color: var(--muted-text);
 }
 
 .hero-text p {
+  max-width: 650px;
+  margin: 0;
   font-size: 18px;
-  line-height: 1.6;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--muted-text);
 }
 
 .hero-image {
@@ -131,6 +145,14 @@ main {
 
 /* Shared section */
 
+.section-container > h2 {
+  margin: 0 0 25px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.8;
+}
+
 .section-container {
   max-width: 1100px;
   margin: 0 auto;
@@ -138,12 +160,13 @@ main {
 }
 
 .section-label {
-  margin-bottom: 10px;
+  margin: 0 0 12px;
   color: var(--muted-text);
-
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
+  line-height: 1.2;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 /* About */
@@ -157,12 +180,6 @@ main {
   margin-bottom: 25px;
 }
 
-.about p {
-  max-width: 800px;
-  font-size: 18px;
-  line-height: 1.7;
-}
-
 .about-content {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -174,12 +191,15 @@ main {
 .about-text {
   display: flex;
   flex-direction: column;
-  grid-area: 18px;
+  gap: 18px;
 }
 
 .about-text p {
+  max-width: 800px;
   margin: 0;
   color: var(--muted-text);
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.8;
 }
 
@@ -236,24 +256,34 @@ main {
 }
 
 .experience-card > p:first-child {
-  font-size: 14px;
+  margin: 0 0 10px;
   color: var(--muted-text);
-  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 .experience-card h3 {
   font-size: 24px;
-  margin: 0 0 5px;
+  margin: 0 0 4px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.4px;
 }
 
 .experience-card h4 {
-  color: var(--muted-text);
-  font-size: 17px;
-  font-weight: 500;
   margin: 0 0 20px;
+  color: var(--muted-text);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
-.experience-card p:last-child {
+.experience-description {
+  margin: 0 0 12px;
+  color: var(--muted-text);
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.7;
 }
 
@@ -272,6 +302,8 @@ main {
   background: var(--tag-background);
   color: var(--text);
   font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 /* Project css */
@@ -300,7 +332,7 @@ main {
 
 .project-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0, 08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0, 0.08);
 }
 
 .project-card a {
@@ -316,14 +348,20 @@ main {
 }
 
 .project-card h3 {
+  margin: 0 0 12px;
   font-size: 24px;
-  margin: 0 0 15px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.4px;
 }
 
 .project-card p {
+  max-width: 700px;
+  margin: 0 0 20px;
   color: var(--muted-text);
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.7;
-  margin-bottom: 20px;
 }
 
 /* skills section */
@@ -355,8 +393,11 @@ main {
 }
 
 .skill-category h3 {
+  margin: 0 0 18px;
   font-size: 20px;
-  margin: 0 0 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.2px;
 }
 
 .skill-list {
@@ -371,6 +412,8 @@ main {
   background: var(--tag-background);
   color: var(--text);
   font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 /* Education */
@@ -401,16 +444,23 @@ main {
 
 .education-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0, 08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0, 0.08);
 }
 
 .education-card p:first-child {
+  margin: 0 0 10px;
   color: var(--muted-text);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 .education-card h3 {
   margin: 10px 0 5px;
   font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.4px;
 }
 
 .education-card h4 {
@@ -418,23 +468,27 @@ main {
   color: var(--muted-text);
   font-size: 17px;
   font-weight: 500;
-}
-
-.education-card p:last-child {
-  line-height: 1.7;
+  line-height: 1.4;
 }
 
 .achievements h3 {
-  margin-top: 0;
+  margin-top: 0 0 20px;
   font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.4px;
 }
 
 .achievements ul {
+  margin: 0;
   padding-left: 20px;
 }
 
 .achievements li {
   margin-bottom: 15px;
+  color: var(--muted-text);
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.6;
 }
 
@@ -457,9 +511,12 @@ main {
 }
 
 .contact-info > p {
+  max-width: 500px;
   margin: 0;
   color: var(--muted-text);
-  line-height: 1.8;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
 }
 .contact-info p {
   max-width: 500px;
@@ -524,6 +581,7 @@ main {
   color: var(--text);
   font-size: 14px;
   font-weight: 600;
+  line-height: 1.4;
 }
 
 .form-group input,
@@ -536,11 +594,13 @@ main {
   border: 1px solid var(--border);
   border-radius: 8px;
   font: inherit;
+  line-height: 1.5;
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
   color: var(--muted-text);
+  opacity: 1;
 }
 
 .form-group input:focus,
@@ -563,12 +623,18 @@ main {
   border-radius: 8px;
   font-size: 15px;
   font-weight: 600;
+  line-height: 1.4;
   cursor: pointer;
   transition: opacity 0.2s ease;
 }
 
 .contact-form button:hover {
   opacity: 0.8;
+}
+
+.contact-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .form-success,
@@ -598,6 +664,8 @@ main {
   margin: 0;
   color: var(--muted-text);
   font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 /* Theme Toggle  */

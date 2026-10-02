@@ -17,7 +17,12 @@ const Experience = () => {
               <h3>{experience.role}</h3>
               <h4>{experience.company}</h4>
               {experience.descriptions.map((description, index) => (
-                <p key={`${experience.company}-${index}`}>{description}</p>
+                <p
+                  className="experience-description"
+                  key={`${experience.company}-${index}`}
+                >
+                  {description}
+                </p>
               ))}
               <div className="technology-list">
                 {experience.technologies.map((technology) => (
