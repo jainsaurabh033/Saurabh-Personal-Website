@@ -46,7 +46,7 @@ const Experience = () => {
               <h4>{experience.company}</h4>
               <p>{experience.description}</p>
 
-              <div className="technolgy-list">
+              <div className="technology-list">
                 {experience.technologies.map((technology) => (
                   <span key={technology}>{technology}</span>
                 ))}

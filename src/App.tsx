@@ -8,24 +8,32 @@ import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Skills from "./components/skills";
+import { useState } from "react";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
   return (
-    <>
-      <Navbar />
-      <Hero
-        name="Saurabh Jain"
-        title="Softare Engineer"
-        description="I build reliable and scalable software applications."
+    <div className={darkMode ? "app dark" : "app"}>
+      <Navbar
+        darkMode={darkMode}
+        onToggleTheme={() => setDarkMode(!darkMode)}
       />
-      <About />
-      <Experience />
-      <Projects />
-      <Skills />
-      <Education />
-      <Contact />
+
+      <main>
+        <Hero
+          name="Saurabh Jain"
+          title="Softare Engineer"
+          description="I build reliable and scalable software applications."
+        />
+        <About />
+        <Experience />
+        <Projects />
+        <Skills />
+        <Education />
+        <Contact />
+      </main>
       <Footer />
-    </>
+    </div>
   );
 }
 
