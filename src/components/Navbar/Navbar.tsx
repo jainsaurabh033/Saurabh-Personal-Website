@@ -1,10 +1,13 @@
-import type { NavbarProps } from "../data/portfolio";
+import type { NavbarProps } from "../../data/portfolio";
+import "./Navbar.css";
 
 const Navbar = ({ darkMode, onToggleTheme }: NavbarProps) => {
   return (
     <nav>
       <div>
-        <strong>Saurabh</strong>
+        <strong>
+          <a href="#hero">Saurabh </a>
+        </strong>
       </div>
 
       <ul className="nav-links">
@@ -41,7 +44,7 @@ const Navbar = ({ darkMode, onToggleTheme }: NavbarProps) => {
               darkMode ? "Switch to light mode" : "Switch to dark mode"
             }
           >
-            {darkMode ? "☀️" : "🌙"}
+            {darkMode ? "☀︎" : "☾"}
           </button>
         </li>
       </ul>

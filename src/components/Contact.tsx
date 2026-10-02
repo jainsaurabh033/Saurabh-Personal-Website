@@ -1,46 +1,10 @@
 import { useState } from "react";
+import { personalInfo } from "../data/portfolio";
 
 const Contact = () => {
   const [copied, setCopied] = useState(false);
 
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [status, setStatus] = useState<
-    "idle" | "submitting" | "success" | "error"
-  >("idle");
-
   const email = "saurabhjain04g@gmail.com";
-
-  function handleChange(
-    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  ) {
-    const { name, value } = event.target;
-
-    setFormData((previous) => ({
-      ...previous,
-      [name]: value,
-    }));
-  }
-
-  function handleSubmit(event: React.FormEvent) {
-    event.preventDefault();
-
-    setStatus("submitting");
-
-    try {
-      console.log(formData);
-
-      // Real email service will be connected here later.
-
-      setStatus("success");
-    } catch {
-      setStatus("error");
-    }
-  }
 
   async function copyEmail() {
     await navigator.clipboard.writeText(email);
@@ -75,25 +39,24 @@ const Contact = () => {
                 </button>
               </div>
 
-              <a
-                href="https://github.com/jainsaurabh033"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href={personalInfo.github} target="_blank" rel="noreferrer">
                 GitHub
               </a>
 
-              <a
-                href="https://www.linkedin.com/in/saurabh-jain-b7647a221/?isSelfProfile=true"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href={personalInfo.linkedin} target="_blank" rel="noreferrer">
                 LinkedIn
+              </a>
+
+              <a href={personalInfo.leetcode} target="_blank" rel="noreferrer">
+                Leetcode
+              </a>
+              <a href={personalInfo.resume} target="_blank" rel="noreferrer">
+                Resume
               </a>
             </div>
           </div>
 
-          <form className="contact-form" onSubmit={handleSubmit}>
+          <form className="contact-form">
             <div className="form-group">
               <label htmlFor="name">Name</label>
 
@@ -102,8 +65,6 @@ const Contact = () => {
                 type="text"
                 name="name"
                 placeholder="Your name"
-                value={formData.name}
-                onChange={handleChange}
                 required
               />
             </div>
@@ -116,8 +77,6 @@ const Contact = () => {
                 type="email"
                 name="email"
                 placeholder="your@email.com"
-                value={formData.email}
-                onChange={handleChange}
                 required
               />
             </div>
@@ -130,25 +89,11 @@ const Contact = () => {
                 name="message"
                 rows={6}
                 placeholder="Your message..."
-                value={formData.message}
-                onChange={handleChange}
                 required
               />
             </div>
 
-            <button type="submit" disabled={status === "submitting"}>
-              {status === "submitting" ? "Sending..." : "Send Message"}
-            </button>
-
-            {status === "success" && (
-              <p className="form-success">Message sent successfully!</p>
-            )}
-
-            {status === "error" && (
-              <p className="form-error">
-                Something went wrong. Please try again.
-              </p>
-            )}
+            <button type="submit">Send Message</button>
           </form>
         </div>
       </div>
