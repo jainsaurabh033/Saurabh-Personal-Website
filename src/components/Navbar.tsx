@@ -1,7 +1,4 @@
-type NavbarProps = {
-  darkMode: boolean;
-  onToggleTheme: () => void;
-};
+import type { NavbarProps } from "../data/portfolio";
 
 const Navbar = ({ darkMode, onToggleTheme }: NavbarProps) => {
   return (

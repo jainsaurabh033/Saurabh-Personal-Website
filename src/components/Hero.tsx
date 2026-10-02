@@ -1,10 +1,5 @@
 import profileImage from "../assets/profile.png";
-
-type HeroProps = {
-  name: string;
-  title: string;
-  description: string;
-};
+import type { HeroProps } from "../data/portfolio";
 
 const Hero = ({ name, title, description }: HeroProps) => {
   return (

@@ -1,26 +1,4 @@
-type SkillCategory = {
-  name: string;
-  skills: string[];
-};
-
-const skillCategories: SkillCategory[] = [
-  {
-    name: "Backend",
-    skills: ["Java", "Spring Boot", "REST APIs", "Microservices"],
-  },
-  {
-    name: "Frontend",
-    skills: ["React", "TypeScript", "JavaScript", "HTML", "CSS"],
-  },
-  {
-    name: "Cloud & Devops",
-    skills: ["AWS", "Docker", "Git", "CI/CD"],
-  },
-  {
-    name: "Database",
-    skills: ["SQL", "PostgreSQL", "MYSQL"],
-  },
-];
+import { skillCategories } from "../data/portfolio";
 
 const Skills = () => {
   return (

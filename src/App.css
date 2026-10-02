@@ -65,7 +65,7 @@ nav a:hover {
 
 /* Main */
 main {
-  padding: 60px 40px;
+  padding: 0;
 }
 
 /* Hero section */
@@ -546,11 +546,14 @@ main {
 
 @media (max-width: 768px) {
   nav {
-    padding: 20px;
+    padding: 16px 20px;
+    flex-wrap: wrap;
+    gap: 15px;
   }
 
   nav div {
     gap: 12px;
+    flex-wrap: wrap;
   }
 
   /* Main  */
@@ -570,7 +573,7 @@ main {
   }
 
   .hero-text h1 {
-    font-size: 42px;
+    font-size: clamp(36px, 10vw, 42px);
   }
 
   .hero-text h2 {
@@ -582,12 +585,12 @@ main {
   }
 
   .hero-image img {
-    width: 220px;
-    height: 220px;
+    width: min(220px, 70vw);
+    height: min(220px, 70vw);
   }
 
   /* Shared section  */
-  section-container {
+  .section-container {
     padding: 60px 20px;
   }
 
@@ -614,5 +617,44 @@ main {
   /* Contact  */
   .contact-content {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  nav div {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .hero-text h2 {
+    font-size: 21px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .section-container {
+    padding: 50px 20px;
+  }
+
+  .about h2 {
+    font-size: 30px;
+  }
+
+  .project-card,
+  .skill-category,
+  .experience-card,
+  .education-card {
+    padding: 22px;
   }
 }

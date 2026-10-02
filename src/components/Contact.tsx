@@ -3,7 +3,7 @@ import { useState } from "react";
 const Contact = () => {
   const [copied, setCopied] = useState(false);
 
-  const email = "your-email@example.com";
+  const email = "saurabhjain04g@gmail.com";
 
   async function copyEmail() {
     await navigator.clipboard.writeText(email);
@@ -37,14 +37,14 @@ const Contact = () => {
                 </button>
               </div>
               <a
-                href="https://github.com/your-username"
+                href="https://github.com/your-usernamehttps://github.com/jainsaurabh033"
                 target="_blank"
                 rel="noreferrer"
               >
                 GitHub
               </a>
               <a
-                href="https://www.linkedin.com/in/your-username"
+                href="https://www.linkedin.com/in/saurabh-jain-b7647a221/?isSelfProfile=true"
                 target="_blank"
                 rel="noreferrer"
               >

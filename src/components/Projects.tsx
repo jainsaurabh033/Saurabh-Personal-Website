@@ -1,35 +1,5 @@
 import ProjectCard from "./ProjectCard";
-
-type Project = {
-  title: string;
-  description: string;
-  technologies: string[];
-  githubUrl: string;
-};
-
-const projects: Project[] = [
-  {
-    title: "Portfolio Website",
-    description:
-      "A personal portfolio website built to showcase my experience, skills, and projects.",
-    technologies: ["React", "TypeScript", "Vite", "CSS"],
-    githubUrl: "https://github.com/your-username/portfolio",
-  },
-  {
-    title: "Project Management System",
-    description:
-      "A web application for managing projects, tasks, and team activities.",
-    technologies: ["Java", "Spring Boot", "React", "PostgreSQL"],
-    githubUrl: "https://github.com/your-username/project-management",
-  },
-  {
-    title: "cloud Application",
-    description:
-      "A cloud-based application demonstrating backend services and cloud infrastructure.",
-    technologies: ["Java", "Spring Boot", "AWS", "SQL"],
-    githubUrl: "https://github.com/your-username/cloud-application",
-  },
-];
+import { projects } from "../data/portfolio";
 
 const Projects = () => {
   return (

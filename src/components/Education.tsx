@@ -1,25 +1,4 @@
-type EducationItem = {
-  degree: string;
-  institution: string;
-  period: string;
-  description: string;
-};
-
-const education: EducationItem[] = [
-  {
-    degree: "Bachelor of Technology",
-    institution: "Your University",
-    period: "2026-2020",
-    description:
-      "Studied computer science and software engineering fundamentals.",
-  },
-];
-
-const achievements = [
-  "Achievements or certification goes here",
-  "Another achievement goes here",
-  "Another certification or recognition",
-];
+import { education, achievements } from "../data/portfolio";
 
 const Education = () => {
   return (

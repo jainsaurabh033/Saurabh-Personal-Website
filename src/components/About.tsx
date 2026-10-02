@@ -13,23 +13,23 @@ const About = () => {
             </p>
 
             <p>
-              I enjoy solving engineering problems across backend, cloud, and
-              application layers
+              I enjoy solving engineering problems across frontend, backend, and
+              cloud.
             </p>
           </div>
 
           <div className="about-details">
             <div>
               <span>focus</span>
-              <strong>Backend Engineering</strong>
+              <strong>Software Engineering</strong>
             </div>
             <div>
               <span>Experience</span>
-              <strong>Software Development</strong>
+              <strong>Frontend Development / Backend Development</strong>
             </div>
             <div>
               <span>Location</span>
-              <strong>India</strong>
+              <strong>Nagpur, India</strong>
             </div>
           </div>
         </div>

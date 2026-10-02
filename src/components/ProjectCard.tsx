@@ -1,9 +1,4 @@
-type ProjectCardProps = {
-  title: string;
-  description: string;
-  technologies: string[];
-  githubUrl: string;
-};
+import type { ProjectCardProps } from "../data/portfolio";
 
 const ProjectCard = ({
   title,
