@@ -7,8 +7,8 @@ import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Skills from "./components/skills";
 import { useState } from "react";
+import Skills from "./components/Skills";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -20,11 +20,7 @@ function App() {
       />
 
       <main>
-        <Hero
-          name="Saurabh Jain"
-          title="Softare Engineer"
-          description="I build reliable and scalable software applications."
-        />
+        <Hero />
         <About />
         <Experience />
         <Projects />

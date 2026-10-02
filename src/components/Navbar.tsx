@@ -6,18 +6,45 @@ const Navbar = ({ darkMode, onToggleTheme }: NavbarProps) => {
       <div>
         <strong>Saurabh</strong>
       </div>
-      <div>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
 
-        <button className="theme-toggle" onClick={onToggleTheme} type="button">
-          {darkMode ? "☀️" : "🌙"}
-        </button>
-      </div>
+      <ul className="nav-links">
+        <li>
+          <a href="#about">About</a>
+        </li>
+
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+
+        <li>
+          <a href="#education">Education</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+
+        <li>
+          <button
+            className="theme-toggle"
+            onClick={onToggleTheme}
+            type="button"
+            aria-label={
+              darkMode ? "Switch to light mode" : "Switch to dark mode"
+            }
+          >
+            {darkMode ? "☀️" : "🌙"}
+          </button>
+        </li>
+      </ul>
     </nav>
   );
 };

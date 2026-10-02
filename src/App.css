@@ -31,11 +31,13 @@ html {
 }
 
 /* Navbar */
-
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 
   padding: 20px 40px;
 
@@ -47,9 +49,13 @@ nav {
     border-color 0.3s ease;
 }
 
-nav div {
+.nav-links {
   display: flex;
+  align-items: center;
   gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 nav a {
@@ -60,6 +66,10 @@ nav a {
 }
 
 nav a:hover {
+  opacity: 0.7;
+}
+
+.nav-links a:hover {
   opacity: 0.7;
 }
 
@@ -156,8 +166,21 @@ main {
 .about-content {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 60px;
-  margin-top: 40px;
+  gap: 50px;
+  align-items: start;
+  /* margin-top: 40px; */
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  grid-area: 18px;
+}
+
+.about-text p {
+  margin: 0;
+  color: var(--muted-text);
+  line-height: 1.8;
 }
 
 .about-details {
@@ -166,10 +189,10 @@ main {
   gap: 20px;
 }
 
-.about-details div {
+.about-details > div {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 6px;
 }
 
 .about-details span {
@@ -180,6 +203,7 @@ main {
 .about-details strong {
   color: var(--text);
   font-size: 17px;
+  font-weight: 600;
 }
 
 /* Experience */
@@ -235,7 +259,7 @@ main {
 
 /* Technology Tags */
 
-.technolgy-list {
+.technology-list {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -368,6 +392,16 @@ main {
   color: var(--text);
   border: 1px solid var(--border);
   border-radius: 12px;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0, 08);
 }
 
 .education-card p:first-child {
@@ -413,7 +447,19 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
-  margin-top: 40px;
+  align-items: start;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-info > p {
+  margin: 0;
+  color: var(--muted-text);
+  line-height: 1.8;
 }
 .contact-info p {
   max-width: 500px;
@@ -423,8 +469,7 @@ main {
 .contact-links {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin-top: 30px;
+  gap: 14px;
 }
 .contact-links a {
   color: var(--text);
@@ -438,6 +483,15 @@ main {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.email-contact a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.email-contact a:hover {
+  text-decoration: underline;
 }
 .email-contact button {
   padding: 6px 10px;
@@ -457,6 +511,12 @@ main {
 .contact-form {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
   gap: 8px;
 }
 
@@ -470,7 +530,7 @@ main {
 .form-group textarea {
   width: 100%;
   box-sizing: border-box;
-  padding: 12px;
+  padding: 12px 14px;
   background: var(--background);
   color: var(--text);
   border: 1px solid var(--border);
@@ -485,11 +545,12 @@ main {
 
 .form-group input:focus,
 .form-group textarea:focus {
-  outline: 2px solid var(--text);
-  outline-offset: 1px;
+  outline: none;
+  border-color: var(--text);
 }
 
 .form-group textarea {
+  min-height: 140px;
   resize: vertical;
 }
 
@@ -508,6 +569,21 @@ main {
 
 .contact-form button:hover {
   opacity: 0.8;
+}
+
+.form-success,
+.form-error {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.form-success {
+  color: var(--text);
+}
+
+.form-error {
+  color: var(--muted-text);
 }
 
 /* Footer  */
@@ -597,6 +673,7 @@ main {
   /* About  */
   .about-content {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
 
   /* Project  */
@@ -657,4 +734,18 @@ main {
   .education-card {
     padding: 22px;
   }
+}
+
+nav a:focus-visible,
+button:focus-visible,
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 3px;
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 4px;
+  border-radius: 4px;
 }

@@ -169,11 +169,36 @@ export const skillCategories: SkillCategory[] = [
   {
     name: "Design",
     skills: [
-      "LLD(Basics)",
-      "HLD(Basics)",
+      "LLD (Basics)",
+      "HLD (Basics)",
       "Design Patterns",
       "SOLID",
       "API Design",
     ],
   },
 ];
+
+export const about = {
+  description:
+    "Software engineer with 3 years of experience across frontend and backend. I worked at TCS and Amazon. At TCS, I worked as a frontend engineer on an IKEA project and at Amazon, I worked as a backend engineer in a Transportation Financial System org.",
+  strengths:
+    "My technical experience includes Java, C++, JavaScript, Spring Boot, AWS, and React. I enjoy building applications, solving engineering problems, and learning new technologies.",
+
+  interests:
+    "Outside of work, I enjoy traveling, reading, and trying new activities.",
+};
+
+export const personalInfo = {
+  name: "Saurabh Jain",
+  title: "Software Engineer",
+  location: "Nagpur, Maharashtra",
+  email: "saurabhjain04g@gmail.com",
+  focus: "Frontend & Backend",
+  experience: "3 Years",
+  description: "I build reliable and scalable software applications.",
+
+  portfolio: "https://saurabhjain033.com",
+  github: "https://github.com/jainsaurabh033",
+  linkedin: "https://www.linkedin.com/in/saurabh-jain-b7647a221",
+  leetcode: "https://leetcode.com/u/saurabh033",
+};

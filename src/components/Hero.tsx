@@ -1,19 +1,19 @@
 import profileImage from "../assets/profile.png";
-import type { HeroProps } from "../data/portfolio";
+import { personalInfo } from "../data/portfolio";
 
-const Hero = ({ name, title, description }: HeroProps) => {
+const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <div className="hero-content">
         <div className="hero-text">
           <p>Hi, I'm</p>
-          <h1>{name}</h1>
-          <h2>{title}</h2>
-          <p>{description}</p>
+          <h1>{personalInfo.name}</h1>
+          <h2>{personalInfo.title}</h2>
+          <p>{personalInfo.description}</p>
         </div>
 
         <div className="hero-image">
-          <img src={profileImage} alt={`${name} profile`} />
+          <img src={profileImage} alt={`${personalInfo.name} profile`} />
         </div>
       </div>
     </section>

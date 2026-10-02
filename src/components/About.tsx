@@ -1,3 +1,5 @@
+import { about, personalInfo } from "../data/portfolio";
+
 const About = () => {
   return (
     <section className="about" id="about">
@@ -7,29 +9,25 @@ const About = () => {
 
         <div className="about-content">
           <div className="about-text">
-            <p>
-              I am a Software Engineer focused on building reliable, scalable,
-              and maintainable software applications.
-            </p>
+            <p>{about.description}</p>
 
-            <p>
-              I enjoy solving engineering problems across frontend, backend, and
-              cloud.
-            </p>
+            <p>{about.strengths}</p>
+
+            <p>{about.interests}</p>
           </div>
 
           <div className="about-details">
             <div>
               <span>focus</span>
-              <strong>Software Engineering</strong>
+              <strong>{personalInfo.focus}</strong>
             </div>
             <div>
               <span>Experience</span>
-              <strong>Frontend Development / Backend Development</strong>
+              <strong>{personalInfo.experience}</strong>
             </div>
             <div>
               <span>Location</span>
-              <strong>Nagpur, India</strong>
+              <strong>{personalInfo.location}</strong>
             </div>
           </div>
         </div>
