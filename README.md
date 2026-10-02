@@ -1,75 +1,161 @@
-# React + TypeScript + Vite
+# Saurabh Jain - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive personal portfolio website showcasing my professional experience, technical skills, projects, and backgroun as a Software Engineer.
 
-Currently, two official plugins are available:
+## Live Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[Visit Portfolio](https://jainsaurabh033.github.io/Saurabh-Personal-Website/)
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Responsive design for desktop, tablet, and mobile
+* Modern and clean user interface
+* Hero section
+* About section
+* Experience section
+* Project section
+* Contact section
+* Responsive navigation
+* Smooth scrolling
+* Optimized images and assets
+* Accessible and semantic UI
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Frontend
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* React
+* TypeScript / JavaScript
+* HTML5
+* CSS
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Build Tools
 
+* Vite
+* npm
+
+### Development Tools
+
+* Git
+* GitHub
+* VS Code
+
+---
+
+# Getting Started
+
+Follow the steps below to run the portfolio locally on your machine.
+
+## Prerequisites
+
+Make sure the following software is installed on your machine
+
+### Node.js
+
+Node.js version 20 or higher is recommended.
+
+Check your installed version:
+
+```bash
+node --version
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+### npm
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+npm is installed automatically with Node.js
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Check your installed version:
 
+```bash
+npm --version
 ```
+
+### Git
+
+Check your Git installation
+
+```bash
+git --version
+```
+
+If above commands return version numbers, your environment ready.
+
+---
+
+# Installation
+
+## 1. Clone the repository
+
+Clone the repository using Git:
+
+```bash
+git clone https://github.com/jainsaurabh033/Saurabh-Personal-Website
+```
+
+## 2. Navigate to the project directory
+
+```bash
+cd portfolio
+```
+
+## 3. Install dependencies
+
+Install all the required project dependencies:
+
+```bash
+npm install
+```
+
+This will install the packages listed in `package.json`.
+
+# Run the Application
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+After the server starts, open the URL showin in your terminal
+
+For a typical Vite application, it will be:
+
+```text
+http://localhost:5173
+```
+
+The application will automatically reload when you make changes to the source code.
+
+---
+
+# Build for Production
+
+To create an optimized production build:
+
+```bash
+npm run build
+```
+
+The production files will be generated in the `dist` directory.
+
+---
+
+# Preview Production Build
+
+You can preview the production build locally using:
+
+```bash
+npm run preview
+```
+
+Then open the URL provided by Vite in your terminal.
+
+---
+
+# License
+
+This project is licensed under the MIT License
+
+You are free to use the structure and ideas from this project for learning and personal purposes.
