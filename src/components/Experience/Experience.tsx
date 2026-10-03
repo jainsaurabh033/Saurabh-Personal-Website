@@ -1,4 +1,5 @@
-import { experiences } from "../data/portfolio";
+import { experiences } from "../../data/portfolio";
+import "./Experience.css";
 
 const Experience = () => {
   return (

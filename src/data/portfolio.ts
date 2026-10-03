@@ -201,6 +201,7 @@ export const personalInfo = {
   focus: "Frontend & Backend",
   experience: "3 Years",
   description: "I build reliable and scalable software applications.",
+  phone: "+91-7387141099",
 
   portfolio: "https://saurabhjain033.com",
   github: "https://github.com/jainsaurabh033",
