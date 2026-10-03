@@ -19,7 +19,7 @@ const About = () => {
 
           <div className="about-details">
             <div>
-              <span>focus</span>
+              <span>Focus</span>
               <strong>{personalInfo.focus}</strong>
             </div>
             <div>

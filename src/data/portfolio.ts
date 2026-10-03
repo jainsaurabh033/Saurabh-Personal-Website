@@ -74,12 +74,6 @@ export const achievements = [
   "Received Applause for Team Award for timely delivery of project tasks and also recieved team appreciation.",
 ];
 
-export type HeroProps = {
-  name: string;
-  title: string;
-  description: string;
-};
-
 export type NavbarProps = {
   darkMode: boolean;
   onToggleTheme: () => void;

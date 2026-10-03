@@ -8,17 +8,17 @@ A responsive personal portfolio website showcasing my professional experience, t
 
 ## Features
 
-* Responsive design for desktop, tablet, and mobile
-* Modern and clean user interface
-* Hero section
-* About section
-* Experience section
-* Project section
-* Contact section
-* Responsive navigation
-* Smooth scrolling
-* Optimized images and assets
-* Accessible and semantic UI
+- Responsive design for desktop, tablet, and mobile
+- Modern and clean user interface
+- Hero section
+- About section
+- Experience section
+- Project section
+- Contact section
+- Responsive navigation
+- Smooth scrolling
+- Optimized images and assets
+- Accessible and semantic UI
 
 ---
 
@@ -26,21 +26,25 @@ A responsive personal portfolio website showcasing my professional experience, t
 
 ### Frontend
 
-* React
-* TypeScript / JavaScript
-* HTML5
-* CSS
+- React
+- TypeScript / JavaScript
+- HTML5
+- CSS
 
 ### Build Tools
 
-* Vite
-* npm
+- Vite
+- npm
 
 ### Development Tools
 
-* Git
-* GitHub
-* VS Code
+- Git
+- GitHub
+- VS Code
+
+---
+
+![ligthouse-performance](./screenshots/performance-benchmark.png)
 
 ---
 
