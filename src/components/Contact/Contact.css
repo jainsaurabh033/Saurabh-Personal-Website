@@ -1,0 +1,159 @@
+/* Contact */
+
+.contact {
+  background: var(--background);
+}
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-info > p {
+  max-width: 500px;
+  margin: 0;
+  color: var(--muted-text);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+.contact-info p {
+  max-width: 500px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.contact-links a {
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+}
+.contact-links a:hover {
+  text-decoration: underline;
+}
+.email-contact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.email-contact a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.email-contact a:hover {
+  text-decoration: underline;
+}
+.email-contact button {
+  padding: 6px 10px;
+  background: var(--background);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.email-contact button:hover {
+  background: var(--tag-background);
+}
+
+/* Contact form  */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  background: var(--background);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font: inherit;
+  line-height: 1.5;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--muted-text);
+  opacity: 1;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--text);
+}
+
+.form-group textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  background: var(--text);
+  color: var(--background);
+
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.contact-form button:hover {
+  opacity: 0.8;
+}
+
+.contact-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-success,
+.form-error {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.form-success {
+  color: var(--text);
+}
+
+.form-error {
+  color: var(--muted-text);
+}

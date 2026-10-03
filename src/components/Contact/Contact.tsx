@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { personalInfo } from "../../data/portfolio";
+import "./Contact.css";
 
 const Contact = () => {
   const [copied, setCopied] = useState(false);
