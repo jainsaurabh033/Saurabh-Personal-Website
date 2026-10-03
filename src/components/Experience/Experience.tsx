@@ -12,7 +12,7 @@ const Experience = () => {
           {experiences.map((experience) => (
             <article
               className="experience-card"
-              key={`${experience.company}-${experience.role}`}
+          key={`${experience.company}-${experience.role}`}
             >
               <p>{experience.period}</p>
               <h3>{experience.role}</h3>
