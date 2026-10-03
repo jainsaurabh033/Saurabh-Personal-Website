@@ -59,3 +59,35 @@
 .hero-image img:hover {
   transform: scale(1.03);
 }
+
+/* Responsive Design  */
+
+@media (max-width: 768px) {
+  /* Hero  */
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(36px, 10vw, 42px);
+  }
+
+  .hero-text h2 {
+    font-size: 24px;
+  }
+
+  .hero-image {
+    flex: none;
+  }
+
+  .hero-image img {
+    width: min(220px, 70vw);
+    height: min(220px, 70vw);
+  }
+}

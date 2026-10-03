@@ -8,3 +8,10 @@
   gap: 30px;
   margin-top: 40px;
 }
+
+/* Responsive Design  */
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}

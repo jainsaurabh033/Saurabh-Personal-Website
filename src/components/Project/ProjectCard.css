@@ -3,7 +3,6 @@
   background: var(--background);
   border: 1px solid var(--border);
   border-radius: 12px;
-  height: fit-content;
 
   transition:
     transform 0.25s ease,

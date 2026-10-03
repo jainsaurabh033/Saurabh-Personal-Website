@@ -15,7 +15,7 @@
   color: var(--text);
   border: 1px solid var(--border);
   border-radius: 12px;
-  height: fit-content;
+  /* height: fit-content; */
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
@@ -48,4 +48,12 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 1.4;
+}
+
+/* Responsive Design  */
+@media (max-width: 768px) {
+  /* Skills  */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 }
