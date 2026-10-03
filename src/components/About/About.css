@@ -1,0 +1,53 @@
+.about {
+  background: var(--surface);
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.about-text p {
+  max-width: 800px;
+  margin: 0;
+  color: var(--muted-text);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.about-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-details > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.about-details span {
+  font-size: 14px;
+  color: var(--muted-text);
+}
+
+.about-details strong {
+  color: var(--text);
+  font-size: 17px;
+  font-weight: 600;
+}
