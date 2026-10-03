@@ -7,7 +7,7 @@ import Projects from "./components/Project/Projects";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Skills from "./components/Skills";
+import Skills from "./components/Skills/Skills";
 import { useState } from "react";
 
 function App() {

@@ -1,4 +1,5 @@
-import { skillCategories } from "../data/portfolio";
+import { skillCategories } from "../../data/portfolio";
+import "./Skill.css";
 
 const Skills = () => {
   return (
