@@ -1,4 +1,5 @@
-import { education, achievements } from "../data/portfolio";
+import { education, achievements } from "../../data/portfolio";
+import "./Education.css";
 
 const Education = () => {
   return (
