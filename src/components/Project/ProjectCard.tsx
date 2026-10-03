@@ -1,4 +1,5 @@
-import type { ProjectCardProps } from "../data/portfolio";
+import type { ProjectCardProps } from "../../data/portfolio";
+import "./ProjectCard.css";
 
 const ProjectCard = ({
   title,
@@ -17,7 +18,7 @@ const ProjectCard = ({
       </div>
 
       <a href={githubUrl} target="_blank" rel="noreferrer">
-        View on GitHub →
+        GitHub
       </a>
     </article>
   );
