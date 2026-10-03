@@ -41,7 +41,9 @@ const Navbar = ({ darkMode, onToggleTheme }: NavbarProps) => {
             onClick={onToggleTheme}
             type="button"
             aria-label={
-              darkMode ? "Switch to light mode" : "Switch to dark mode"
+              darkMode
+                ? "Switch to light mode, button"
+                : "Switch to dark mode, button"
             }
           >
             {darkMode ? "☀︎" : "☾"}

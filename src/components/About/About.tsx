@@ -1,4 +1,4 @@
-import { about, personalInfo } from "../data/portfolio";
+import { about, personalInfo } from "../../data/portfolio";
 
 const About = () => {
   console.log("Hello world");

@@ -206,6 +206,7 @@ export const personalInfo = {
   github: "https://github.com/jainsaurabh033",
   linkedin: "https://www.linkedin.com/in/saurabh-jain-b7647a221",
   leetcode: "https://leetcode.com/u/saurabh033",
+  medium: "https://medium.com/@saurabh033",
   resume:
     "https://drive.google.com/file/d/1qWZ8UEqExU7FuryF4BhYTcHNZDsVGoKQ/view?usp=sharing",
 };

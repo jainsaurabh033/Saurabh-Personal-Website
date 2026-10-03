@@ -1,5 +1,6 @@
-import profileImage from "../assets/profile.png";
-import { personalInfo } from "../data/portfolio";
+import profileImage from "../../assets/profile.png";
+import { personalInfo } from "../../data/portfolio";
+import "./Hero.css";
 
 const Hero = () => {
   return (

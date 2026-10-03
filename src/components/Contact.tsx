@@ -53,6 +53,9 @@ const Contact = () => {
               <a href={personalInfo.resume} target="_blank" rel="noreferrer">
                 Resume
               </a>
+              <a href={personalInfo.medium} target="_blank" rel="noreferrer">
+                Medium
+              </a>
             </div>
           </div>
 
