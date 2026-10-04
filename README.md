@@ -1,6 +1,6 @@
 # Saurabh Jain - Portfolio
 
-A responsive personal portfolio website showcasing my professional experience, technical skills, projects, and background as a Software Engineer.
+A responsive personal portfolio website showcasing my [interest, about me, experience, personal projects, technical skills, education background]. 
 
 ## Live Website
 
