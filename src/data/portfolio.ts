@@ -14,11 +14,12 @@ export const experiences: ExperienceItem[] = [
     period: "2024 - 2025",
     location: "India",
     descriptions: [
-      "Integrated a library across payments APIs (POST, UPDATE, DELETE), preventing unauthorized production database modifications and improving system safety.",
-      "Implemented AWS CloudWatch alarms to monitor CPU utilization and JVM memory across multiple services.",
-      "Acted as on-call engineer for production systems, diagnosing and resolving cross-service issues, and collaborating with upstream and downstream teams to maintain system reliability",
+      "Integrated a security library across critical payment APIs (POST, UPDATE, DELETE), preventing unauthorized production database modifications and improving system safety.",
+      "Designed and implemented monitoring using AWS CloudWatch for CPU utilization and JVM memory across multiple services, improving incident detection and reducing mean time to resolution",
+      "Implemented infrastructure safeguards using AWS CDK by enabling delete protection for critical database resources, preventing accidental data loss in production environments.",
+      "Acted as on-call engineer for production systems, diagnosing and resolving cross-service issues, and collaborating with upstream and downstream teams to maintain system reliability.",
       "Automated invoice validation workflows for UAT by designing end-to-end test scenarios and building a reusable dataset covering the complete invoice lifecycle.",
-      "Updated service documentation and peak-readiness requirements to ensure system preparedness for high-traffic scenarios.",
+      "Led service documentation updates for peak readiness, ensuring system preparedness for high-traffic scenarios and improving operational visibility."
     ],
     technologies: [
       "Java",
