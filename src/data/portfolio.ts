@@ -204,5 +204,5 @@ export const personalInfo = {
   leetcode: "https://leetcode.com/u/saurabh033",
   medium: "https://medium.com/@saurabh033",
   resume:
-    "https://drive.google.com/file/d/1qWZ8UEqExU7FuryF4BhYTcHNZDsVGoKQ/view?usp=sharing",
+    "https://drive.google.com/file/d/1jSY0-40adUaLyfuMHOB1IJzUQpD6PNU4/view?usp=sharing",
 };
