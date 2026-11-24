@@ -14,12 +14,12 @@ export const experiences: ExperienceItem[] = [
     period: "2024 - 2025",
     location: "India",
     descriptions: [
-      "Integrated a security library across critical payment APIs (POST, UPDATE, DELETE), preventing unauthorized production database modifications and improving system safety.",
-      "Designed and implemented monitoring using AWS CloudWatch for CPU utilization and JVM memory across multiple services, improving incident detection and reducing mean time to resolution",
-      "Implemented infrastructure safeguards using AWS CDK by enabling delete protection for critical database resources, preventing accidental data loss in production environments.",
-      "Acted as on-call engineer for production systems, diagnosing and resolving cross-service issues, and collaborating with upstream and downstream teams to maintain system reliability.",
-      "Automated invoice validation workflows for UAT by designing end-to-end test scenarios and building a reusable dataset covering the complete invoice lifecycle.",
-      "Led service documentation updates for peak readiness, ensuring system preparedness for high-traffic scenarios and improving operational visibility."
+      "Integrated a security library into payment APIs (POST, UPDATE, DELETE) to prevent unauthorized database modifications.",
+      "Set up AWS Cloudwatch monitoring for CPU utilization and JVM memory across multiple services to improve issue detection and troubleshooting.",
+      "Implemented AWS CDK delete protection for database tables to prevent accidental deletion of production data",
+      "Supported production systems as on on-call engineer, troubleshooting cross-service issues and coordinating with upstream and downstream teams.",
+      "Automated invoice validation for UAT by creating end-to-end test scenarios and a reusable dataset covering the invoice lifecycle.",
+      "Updated service documentation for peak readiness to improve operational visibility and prepare services for high-traffic scenarios"
     ],
     technologies: [
       "Java",
@@ -204,5 +204,5 @@ export const personalInfo = {
   leetcode: "https://leetcode.com/u/saurabh033",
   medium: "https://medium.com/@saurabh033",
   resume:
-    "https://drive.google.com/file/d/1jSY0-40adUaLyfuMHOB1IJzUQpD6PNU4/view?usp=sharing",
+    "https://drive.google.com/file/d/1Xf6JApbfJAF6bwtgY87hsOFImEnWo8IL/view?usp=sharing",
 };
